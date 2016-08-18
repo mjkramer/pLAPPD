@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def read_wfm(fname):
-    return np.loadtxt(fname, delimiter=',', skiprows=6, usecols=(3,4), unpack=True)
+    return np.loadtxt(fname, delimiter=',', usecols=(3,4), unpack=True)
 
 def plot_dir(dirname):
     from glob import glob
